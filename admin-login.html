@@ -4,65 +4,58 @@
 <title>RYQX Admin Login</title>
 
 <style>
-
 body{
+    margin:0;
     background:#081B3A;
-    color:white;
-    font-family:Arial;
     height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
+    font-family:Arial;
+    color:white;
 }
 
-.login-box{
+.box{
     background:#111827;
-    width:350px;
+    width:320px;
     padding:30px;
     border-radius:15px;
+    text-align:center;
     box-shadow:0 0 20px #7c3aed;
 }
 
-.logo{
-    text-align:center;
+h1{
     color:#a855f7;
-    font-size:32px;
-    font-weight:bold;
 }
 
 input{
-    width:100%;
+    width:90%;
     padding:12px;
-    margin-top:15px;
+    margin:10px;
     border-radius:8px;
-    border:none;
+    border:0;
 }
 
 button{
-    width:100%;
-    margin-top:20px;
+    width:95%;
     padding:12px;
     background:#7c3aed;
     color:white;
-    border:none;
+    border:0;
     border-radius:8px;
+    cursor:pointer;
 }
-
 </style>
 
 </head>
 
 <body>
 
-<div class="login-box">
+<div class="box">
 
-<div class="logo">
-RYQX
-</div>
+<h1>RYQX</h1>
 
-<button onclick="login()">
-LOGIN ADMIN
-</button>
+<h3>ADMIN LOGIN</h3>
 
 <input placeholder="Username">
 
@@ -75,24 +68,4 @@ LOGIN ADMIN
 </div>
 
 </body>
-    <script>
-function login(){
-
-    let username = document.querySelector("input[type='text']").value;
-    let password = document.querySelector("input[type='password']").value;
-
-    if(username === "admin" && password === "RYQX@12345"){
-
-        alert("Login Success");
-
-        window.location.href = "admin-dashboard.html";
-
-    }else{
-
-        alert("Wrong Username or Password");
-
-    }
-
-}
-    </script>
 </html>
